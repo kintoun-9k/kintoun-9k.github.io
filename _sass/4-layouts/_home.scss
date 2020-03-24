@@ -38,7 +38,6 @@
 .nav-menu,
 .search {
   position: fixed;
-  margin-left: 600px;
   top: 0;
   left: 0;
   right: 0;
@@ -186,7 +185,7 @@
       }
     }
   }
-  
+
   .search ol {
     color: $snow;
   }
@@ -420,8 +419,8 @@
 
   .menu-list {
     .menu-link {
-      font-size: 40px;
-      line-height: 70px;
+      font-size: 50px;
+      line-height: 80px;
       color: $snow;
       &:before {
         height: 8px;
@@ -451,11 +450,11 @@
 
   .menu-list {
     .menu-link {
-      font-size: 40px;
-      line-height: 70px;
+      font-size: 50px;
+      line-height: 80px;
       color: $snow;
       &:before {
-        height: 6px;
+        height: 8px;
       }
       &:hover {
         color: $primary-color;
@@ -495,27 +494,7 @@
       display: none;
     }
   }
-    .search-results-list {
-      margin: 0;
-      .search-item {
-        margin-bottom: 15px;
-        list-style: decimal inside;
-        text-align: left;
-        border-bottom: 2px solid $lighten-black;
-        white-space: nowrap;
-        .search-link {
-          display: inline-block;
-          width: 100%;
-          padding: 15px;
-          font-size: 21px;
-          color: $snow;
-          white-space: normal;
-          &:hover {
-            color: $primary-color;
-          }
-        }
-      }
-    }
+
   .nav-menu .menu-link,
   .nav-buttons i.ion {
     transition: color $global-transition;
