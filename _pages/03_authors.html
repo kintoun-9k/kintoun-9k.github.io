@@ -19,7 +19,7 @@ permalink: /authors/
   <ul class="author-list list-reset">
     {% for author in author_names %}
       {% assign current_author = site.data.authors[author] %}
-      <li class="author-item"><a href="{{ current_author.url }}" class="author-tag">{{ current_author.name | capitalize }}</a></li>
+      <li class="author-item"><a href="{{ current_author.url | prepend : site.url }}" class="author-tag">{{ current_author.name | capitalize }}</a></li>
     {% endfor %}
   </ul>
 </div>
