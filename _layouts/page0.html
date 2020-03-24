@@ -1,0 +1,62 @@
+---
+layout: default
+---
+<div class="container">
+		<article class="col col-12 col-t-10 push-t-1 page">
+			<div class="page-content">
+				<div class="page-head">
+					{% if page.author == nil %}
+					<img src = {{"/img/" | prepend: site.baseurl | append : site.logo}}></img>
+					{% endif %}
+					<h1 class="page-title">{{ page.title | escape }}</h1>
+
+					{% if page.author %}
+					{% assign current_author = site.data.authors[page.author] %}
+					<ul class="social-profiles list-reset">
+
+			      {% if current_author.email %}
+						<li class="social-profiles-item">
+							<a href="mailto:{{ current_author.email | encode_email }}" class="social-profiles-link"><i class="email-icon ion ion-ios-mail"></i></a>
+						</li>
+						{% else %} {% endif %}
+
+						{% if current_author.facebook %}
+			      <li class="social-profiles-item">
+			        <a href="{{ current_author.facebook }}" class="social-profiles-link"><i class="ion ion-logo-facebook"></i></a>
+			      </li>
+			      {% else %} {% endif %}
+
+			       {% if current_author.twitter %}
+			      <li class="social-profiles-item">
+			        <a href="{{ current_author.twitter }}" class="social-profiles-link"><i class="ion ion-logo-twitter"></i></a>
+			      </li>
+			      {% else %} {% endif %}
+
+			      {% if current_author.instagram %}
+			      <li class="social-profiles-item">
+			        <a href="{{ current_author.instagram }}" class="social-profiles-link"><i class="ion ion-logo-instagram"></i></a>
+			      </li>
+			      {% else %} {% endif %}
+
+			      {% if current_author.pinterest %}
+			      <li class="social-profiles-item">
+			        <a href="{{ current_author.pinterest }}" class="social-profiles-link"><i class="ion ion-logo-pinterest"></i></a>
+			      </li>
+			      {% else %} {% endif %}
+
+						<br>
+
+			    </ul>
+				{% endif %}
+				</div>
+
+				<div class="page-body">
+					{% if page.title == "02_about.md" %}
+					<br>
+					{% endif %}
+					{{ content }}
+				</div>
+			</div>
+		</article> <!-- /.page -->
+	</div>
+</div>

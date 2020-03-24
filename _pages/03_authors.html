@@ -1,0 +1,25 @@
+---
+layout: page0
+title: Authors
+permalink: /authors/
+---
+<div class="centered-text">
+  <p> A special thanks to our contributors. Their words create ripples toward a better future.</p>
+</div>
+<!--{% for author in page.author %}
+  {{ site.data.authors[author] }}
+{% endfor %}-->
+
+
+<!-- THIS WORKS!!! author_names is unique list of authors for site -->
+{% capture site_authors %}{% for post in site.posts %}{{ post.author | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+{% assign author_names = site_authors | split: ',' | uniq | sort %}
+
+<div class="centered-text">
+  <ul class="author-list list-reset">
+    {% for author in author_names %}
+      {% assign current_author = site.data.authors[author] %}
+      <li class="author-item"><a href="{{ current_author.url }}" class="author-tag">{{ current_author.name | capitalize }}</a></li>
+    {% endfor %}
+  </ul>
+</div>

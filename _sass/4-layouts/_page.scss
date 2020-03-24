@@ -1,0 +1,105 @@
+// Page
+.page {
+  margin-bottom: 20px;
+}
+
+.page-image-box {
+  background: $lighten-black;
+  &.reveal-in {
+    .page-image {
+      opacity: 1;
+    }
+  }
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.page-image {
+  min-height: 230px;
+  margin-bottom: 30px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: $black;
+  box-shadow: 0 9px 18px 0 	rgb(255,250,250);
+  opacity: 0;
+  transition: all 1s cubic-bezier(0.6, 0.3, 0, 1);
+  &:after {
+    content: "";
+    display: table;
+    width: 100%;
+    padding-top: 50%;
+  }
+}
+
+.page-content {
+  padding: 40px 15px;
+  box-shadow: 0 9px 18px 0 rgba(0,0,0,0.25);
+  background: rgba($background, .95);
+}
+
+.page-head {
+  padding-bottom: 30px;
+  .page-title {
+    font-size: 28px;
+    text-align: center;
+    font-weight: normal;
+    line-height: 28px;
+    margin-bottom: 0;
+  }
+}
+.page-head img {
+  position: absolute;
+  margin-top: -30px;
+  width: 70px;
+  height: 110px;
+  background: $background;
+  }
+
+.page-head, .page-body {
+  margin-bottom: 20px;
+  border-bottom: 1px solid $border-color;
+}
+
+.page-body {
+  padding-bottom: 20px;
+}
+
+// Authors Widget
+.author-list {
+  .author-item {
+    display: inline-block;
+    margin: 3px;
+    &:last-child {
+      margin-right: 0;
+    }
+    .author-tag {
+      display: inline-block;
+      padding: 5px 15px;
+      font-size: 12px;
+      border-radius: $global-radius;
+      color: $snow;
+      background: lighten($blue-black, 5%);
+      &:hover {
+        color: $white;
+        background: $primary-color;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .page-content {
+    padding: 40px;
+  }
+
+  .page-head {
+    .page-title {
+      font-size: 43px;
+      line-height: 43px;
+      margin-bottom: 10px;
+    }
+  }
+}
