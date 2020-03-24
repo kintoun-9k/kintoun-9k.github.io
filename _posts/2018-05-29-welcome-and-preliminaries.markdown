@@ -2,7 +2,7 @@
 layout: post
 author: [agathos]
 title:  "Welcome and Preliminaries"
-date:   2020-03-24 12:48:55 -0500
+date:   2020-03-24 4:43:55 -0500
 image:  11.jpg
 tags:   [Welcome]
 ---
