@@ -2,7 +2,7 @@
 # General Site Settings
 
 title: The Power of Words
-description: Galada is an easy and simple theme for Jekyll. Dark colors, give it a special exquisite look. A careful approach to design and features make it an ideal solution for a personal blog. # this means to ignore newlines until "baseurl:"
+description: On change, dialectical repair, and empowerment through exploration of the power of words. # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://thepowerofwords.net" # the base hostname & protocol for your site, e.g. http://example.com
 url_local: "http://localhost:4000/"
