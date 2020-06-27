@@ -11,6 +11,8 @@ permalink: /authors/dynamis/
   	<div class="row">
   		<div class="col-d-4 col-12 col-t-8">
   			<div class="row">
+          <p>{{ post.author[item] }}</p>
+          <p>{{ current_author }}</p>
   			{%- for post in site.posts -%}
           {% for item in (0..post.author.size) %}
             {% if post.author[item] == current_author.name  %}
