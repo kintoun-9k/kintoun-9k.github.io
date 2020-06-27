@@ -16,7 +16,7 @@ permalink: /authors/dynamis/
             {% if post.author[item] == current_author.name  %}
               {{ current_author }}
               {{ post.author[item] }}
-      				<article class="article col col-12 col-t-6">
+      				<!-- <article class="article col col-12 col-t-6">
       					<div class="article-box">
       						<div class="article-head">
       							<a href="{{ post.url | prepend: site.baseurl }}" class="article-image" style="background-image: url({{"/img/" | prepend: site.baseurl | append : post.image}})">
@@ -44,7 +44,7 @@ permalink: /authors/dynamis/
       							<p class="article-excerpt">{% if post.description %}{{ post.description | strip_html | truncate: 135 }}{% else %}{{ post.content | strip_html | truncate: 135 }}{% endif %}</p>
       						</div>
       					</div>
-      				</article>
+      				</article> -->
             {% endif %}
           {% endfor %}
   			{% endfor %}
