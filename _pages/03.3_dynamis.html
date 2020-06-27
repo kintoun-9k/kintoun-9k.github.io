@@ -14,8 +14,6 @@ permalink: /authors/dynamis/
   			{%- for post in site.posts -%}
           {% for item in (0..post.author.size) %}
             {% if post.author[item] == current_author.name  %}
-              {{ current_author }}
-              {{ post.author[item] }}
       				<article class="article col col-12 col-t-6">
       					<div class="article-box">
       						<div class="article-head">
@@ -42,7 +40,6 @@ permalink: /authors/dynamis/
       								<a href="{{ post.url | prepend: site.baseurl }}">{{post.title}}</a>
       							</h2>
       							<p class="article-excerpt">{% if post.description %}{{ post.description | strip_html | truncate: 135 }}{% else %}{{ post.content | strip_html | truncate: 135 }}{% endif %}</p>
-                    <li class="author-item"><a href="{{ current_author.url | prepend : site.baseurl }}" class="author-tag">{{ current_author.name | capitalize }}</a></li>
       						</div>
       					</div>
       				</article>
