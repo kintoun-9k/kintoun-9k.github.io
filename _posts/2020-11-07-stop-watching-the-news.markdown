@@ -1,6 +1,6 @@
 ---
 layout: post
-authoer: [dynamis]
+author: [dynamis]
 title: "Stop Watching the News"
 date: 2020-11-07 01:42:00 -0500
 image: 12.jpeg
