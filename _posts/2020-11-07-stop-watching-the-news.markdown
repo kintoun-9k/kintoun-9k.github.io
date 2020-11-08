@@ -1,10 +1,10 @@
 ---
-layout: post
-author: [dynamis]
-title: "Stop Watching the News"
-date: 2020-11-07 01:42:00 -0500
-image: 12.jpeg
-tags: [Education]
+layout:	post
+author:	[dynamis]
+title:	"Stop Watching the News"
+date:	2020-11-07 1:42:00 -0500
+image:	12.jpeg
+tags:	[Education]
 ---
 # Stop Watching the News
 

@@ -1,10 +1,10 @@
 ---
-layout: post
-author: [dynamis]
-title: "8 Dialectical Tips to Speaking with Liberals"
-date: 2020-11-07 00:20:00 -0500
-image: 01.jpg
-tags: [Dialectics, Political Discorse]
+layout:	post
+author:	[dynamis]
+title:	"8 Dialectical Tips to Speaking with Liberals"
+date:	2020-11-07 0:20:00 -0500
+image:	01.jpg
+tags:	[Dialectics, Political Discorse]
 ---
 # 8 Dialectical Tips to Speaking with Liberals
 I’ve been thinking a lot about dialectics lately. I still consider myself a novice, but I think that what I’ve learned is applicable to discussing a topic with someone that has a differing opinion than you. Since the majority of people that you will encounter are liberals, I’ll try and aim this towards leftists talking with a liberal. It should be said that this is a specific application of dialectics. While I think that I'm generally correct, it's also important when thinking dialectically to think of being correct as a process that will evolve. Perhaps if you try some of these tips in the real world, you'll be able to improve on these, and so will I.

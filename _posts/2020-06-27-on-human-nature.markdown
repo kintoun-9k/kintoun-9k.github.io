@@ -1,10 +1,10 @@
 ---
-layout: post
-author: [dynamis]
-title: "On Human Nature"
-date:   2020-06-27 7:00:00 -0500
-image:  10.jpg
-tags:   [Humanity]
+layout:	post
+author:	[dynamis]
+title:	"On Human Nature"
+date:	2020-06-27 7:00:00 -0500
+image:	10.jpg
+tags:	[Humanity]
 ---
 We hear the argument all the time: “This is against human nature.” And it completely shuts down the discussion. As a leftist, I hear this argument all the time. “Communism can’t work because of human nature!” or “It only works on paper!” Usually I hear these from liberals that cannot counter my arguments with anything else but a nebulous grasp at a concept such as human nature. It’s the religious wildcard of “God moves in mysterious ways,” but made by a secular person. It’s not an argument, it’s a conversation killer, an insult. They’ve been argued into a corner, and don’t want to admit that liberalism and capitalism are deeply flawed. And so, they throw out this statement that they think you are unable to argue. Well, I will dispute this statement. This platitude prevents people from critically thinking, and hopefully, the next time someone says this to you or me, we’ll be better prepared to counter it.
 
