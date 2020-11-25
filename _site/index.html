@@ -311,26 +311,42 @@ We are looking forward to sharing deep insights with readers. It will really be 
   </div>
 
   <div class="widget widget-newsletter">
-    <script src"https://www.google.com/recaptcha/api.js"></script>
-
     <h3 class="widget-title">Newsletter</h3>
     <div class="newsletter-subtitle">Sign up for our email list</div>
     <div class="newsletter-text">Receive the latest articles via email</div>
     <!-- Old mailchimp style form below commented out -->
     <!--<form class="c-newsletter-form validate" action="#" method="POST"
       id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate> -->
-      <form action="https://getsimpleform.com/messages?form_api_token=44a9d46e7ee74558c95f8e35108f4eeb" method="post">
+      <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> --> 
+      <script type="text/javascript">
+	      var verifyCallback = function(response) {
+		alert(response);
+	      };
+	      var onloadCallback = function() {
+		// Renders the HTML element with id 'mc-embedded-subscribe' as a reCAPTCHA widget.
+		grecaptcha.render('mc-embedded-subscribe', {
+		  'sitekey' : '6LenLu0ZAAAAAIE3xvqkAOatCaDG4NaoU8owrHFx',
+		  'callback' : verifyCallback,
+		  'theme' : 'dark',
+		  'size' : 'compact'
+		});
+	      };
+      </script>
+      <form action="https://getsimpleform.com/messages?form_api_token=44a9d46e7ee74558c95f8e35108f4eeb" method="post"> 
       <div class="newsletter-group">
         <div class="newsletter-group-top">
           <label class="screen-reader-text" for="mce-EMAIL">Email address</label>
           <i class="email-icon ion ion-ios-mail"></i>
           <input class="newsletter-email required email" id="mce-EMAIL" type="text" name="EMAIL" placeholder="E-mail">
-        </div>
-        <input class="newsletter-button" id="mc-embedded-subscribe" type="submit" name="subscribe" value="Subscribe">
-        <input type="hidden" name='redirect_to' value=http://localhost:4000/thankyou/ />
+        </div> 
+	<div id="mc-embedded-subscribe"></div>
+        <input class="newletter-button" type="submit" name="subscribe" value="Subscribe">
+        <!-- <input type="hidden" name='redirect_to' value=http://localhost:4000/thankyou/ /> -->
       </div>
-      <div class="g-recaptcha" data-sitekey="6LenLu0ZAAAAAIE3xvqkAOatCaDG4NaoU8owrHFx"></div>
-    </form>
+      </form>
+      <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+        async defer>
+      </script>
   </div>
 
   
