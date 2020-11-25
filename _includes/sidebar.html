@@ -91,8 +91,8 @@
           <i class="email-icon ion ion-ios-mail"></i>
           <input class="newsletter-email required email" id="mce-EMAIL" type="text" name="EMAIL" placeholder="E-mail">
         </div> 
-	<div id="captcha"></div>
-        <input class="newletter-button" id="mc-embedded-subscribe" type="submit" name="subscribe" value="Subscribe" disabled="disabled">
+	<div class="newsletter-captcha" id="captcha"></div>
+        <input class="newsletter-button" id="mc-embedded-subscribe" type="submit" name="subscribe" value="Subscribe" disabled="disabled">
         <input type="hidden" name='redirect_to' value={{"/thankyou/" | prepend : site.url}} />
       </div>
       </form>
