@@ -376,16 +376,19 @@
       id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate> -->
       <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> --> 
       <script type="text/javascript">
-	      var verifyCallback = function(response) {
-		alert(response);
+	      var enableBtn = function() {
+		document.getElementById('subbutton').disabled = false;
+	      };
+	      var disableBtn = function() {
+		document.getElementById('subbutton').disable = true;
 	      };
 	      var onloadCallback = function() {
 		// Renders the HTML element with id 'mc-embedded-subscribe' as a reCAPTCHA widget.
 		grecaptcha.render('mc-embedded-subscribe', {
 		  'sitekey' : '6LenLu0ZAAAAAIE3xvqkAOatCaDG4NaoU8owrHFx',
-		  'callback' : verifyCallback,
-		  'theme' : 'dark',
-		  'size' : 'compact'
+		  'callback' : enableBtn,
+		  'expired-callback' : disableBtn,
+		  'theme' : 'dark'
 		});
 	      };
       </script>
@@ -397,7 +400,7 @@
           <input class="newsletter-email required email" id="mce-EMAIL" type="text" name="EMAIL" placeholder="E-mail">
         </div> 
 	<div id="mc-embedded-subscribe"></div>
-        <input class="newletter-button" type="submit" name="subscribe" value="Subscribe">
+        <input class="newletter-button" id="subbutton" type="submit" name="subscribe" value="Subscribe" disabled="disabled">
         <!-- <input type="hidden" name='redirect_to' value=http://localhost:4000/thankyou/ /> -->
       </div>
       </form>
