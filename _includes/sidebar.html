@@ -60,6 +60,8 @@
   </div>
 
   <div class="widget widget-newsletter">
+    <script src"https://www.google.com/recaptcha/api.js"></script>
+
     <h3 class="widget-title">Newsletter</h3>
     <div class="newsletter-subtitle">Sign up for our email list</div>
     <div class="newsletter-text">Receive the latest articles via email</div>
@@ -76,6 +78,7 @@
         <input class="newsletter-button" id="mc-embedded-subscribe" type="submit" name="subscribe" value="Subscribe">
         <input type="hidden" name='redirect_to' value={{"/thankyou/" | prepend : site.url}} />
       </div>
+      <div class="g-recaptcha" data-sitekey="6LenLu0ZAAAAAIE3xvqkAOatCaDG4NaoU8owrHFx"></div>
     </form>
   </div>
 
