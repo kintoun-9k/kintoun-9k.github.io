@@ -218,12 +218,14 @@
     }
   }
   .article-content-first {
-    padding: 20px;
+    // padding: 20px 20px 20px 20px;
     color: darken($background, 5%);
 // Added below to accomodate for different color background images //
+    // display: flex;
+    // align-items: center;
     position: relative;
-    left: 20px;
     background: $snow;
+    margin: 30px 20px 30px 30px;
     opacity: 0.85;
     font-weight: bold;
     box-shadow: 0 9px 18px 0 rgba(0, 0, 0, .25);
@@ -231,8 +233,8 @@
     transition: $global-transition;
 //end added material //
     .article-tag {
-      position: relative;
-      bottom: 10px;
+      // position: relative;
+      // bottom: 10px;
       .tag {
         font-size: 12px;
       }
@@ -419,15 +421,18 @@
 
 
 // Media ~ Theshold given by min-width below...
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 200px) {
   .article-first {
     .article-content-first {
+      padding: 20px 20px 20px 20px;
+      margin: 10px 30px 10px 30px;
       .article-title {
-        font-size: 45px;
+        font-size: 35px;
         line-height: 45px;
       }
       .article-excerpt {
-        margin-bottom: 50px;
+        margin-bottom: 40px;
+	margin-right: 40px;
       }
     }
   }
@@ -458,7 +463,8 @@
 @media only screen and (min-width: 768px) {
   .article-first {
     .article-content-first {
-      padding: 60px 40px 0;
+      padding: 20px 10px 20px 20px;
+      // background-position: center;
     }
   }
 }
