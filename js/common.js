@@ -131,3 +131,24 @@ $(function() {
   });
 
 });
+
+
+// 	var scale = width / 302;
+// 	$('newsletter-captcha').css('transform', 'scale(' + scale + ')');
+// 	$('newsletter-captcha').css('-webkit-transform', 'scale(' + scale + ')');
+// 	$('newsletter-captcha').css('transform-origin', '0 0');
+// 	$('newsletter-captcha').css('-webkit-transform-origin', '0 0');
+// }
+
+// $(init);
+
+// function init() {
+//     var width = $('.newsletter-captcha').parent().width();
+// if (width < 401) {
+// 	var scale = width / 401;
+// 	$('.newsletter-captcha').css('transform', 'scale(' + scale + ')');
+// 	$('.newsletter-captcha').css('-webkit-transform', 'scale(' + scale + ')');
+// 	$('.newsletter-captcha').css('transform-origin', '0 0');
+// 	$('.newsletter-captcha').css('-webkit-transform-origin', '0 0');
+// }
+// }
