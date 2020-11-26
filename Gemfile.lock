@@ -70,6 +70,7 @@ DEPENDENCIES
   jekyll-email-protect
   jekyll-paginate
   jekyll-sitemap
+  kramdown (>= 2.3.0)
   tzinfo-data
 
 BUNDLED WITH

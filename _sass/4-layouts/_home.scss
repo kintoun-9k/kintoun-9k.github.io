@@ -220,15 +220,27 @@
   .article-content-first {
     padding: 20px;
     color: darken($background, 5%);
+// Added below to accomodate for different color background images //
+    position: relative;
+    left: 20px;
+    background: $snow;
+    opacity: 0.85;
+    font-weight: bold;
+    box-shadow: 0 9px 18px 0 rgba(0, 0, 0, .25);
+    border-radius: $global-radius;
+    transition: $global-transition;
+//end added material //
     .article-tag {
+      position: relative;
+      bottom: 10px;
       .tag {
         font-size: 12px;
       }
     }
     .article-date {
-      .date {
+     .date {
         font-size: 12px;
-        color: rgba($text, .8);
+        color: blue-black;
       }
     }
     .article-title {
@@ -237,7 +249,7 @@
       line-height: 30px;
       font-weight: normal;
       a {
-        color: $background;
+        color: $blue-black;
         transition: $global-transition;
         &:hover {
           color: $primary-color;
@@ -246,6 +258,7 @@
     }
     .article-excerpt {
       max-width: 450px;
+      color: $blue-black;
       margin-bottom: 30px;
       font-size: 14px;
       line-height: 23px;
@@ -253,6 +266,8 @@
     .button {
       font-size: 14px;
       font-weight: 700;
+      position: relative;
+      bottom: 15px;
       border: 1px solid rgba(201, 211, 231, 50);
       color: lighten($text,15%);
       transition: $global-transition;
