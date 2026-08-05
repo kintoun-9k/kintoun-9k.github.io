@@ -56,8 +56,7 @@ $(function() {
   /* =======================
   // Reveal Image
   ======================= */
-  var ww = window.innerWidth,
-    wh = window.innerHeight;
+  var wh = window.innerHeight;
 
   $(window).ready(function () {
     $('body').waitForImages({
@@ -103,25 +102,6 @@ $(function() {
   
 
   /* =======================
-  // Instagram Feed
-  ======================= */
-  // userId and accessToken from Matthew Elsom (https://codepen.io/matthewelsom/pen/zrrrLN) for example, for which he thanks a lot!
-  var instagramFeed = new Instafeed({
-    get: 'user',
-    limit: 6,
-    resolution: 'standard_resolution',
-    userId: '8987997106',
-    accessToken: '8987997106.924f677.8555ecbd52584f41b9b22ec1a16dafb9',
-    template:
-      '<li class="instagram-item"><a href="{{link}}" aria-label="{{caption}}" target="_blank"><img src="{{image}}" alt="{{caption}}"></a></li>'
-  });
-
-  if ($('#instafeed').length) {
-    instagramFeed.run();
-  }
-
-
-  /* =======================
   // Scroll Top Button
   ======================= */
   $(".top").click(function () {
@@ -131,24 +111,3 @@ $(function() {
   });
 
 });
-
-
-// 	var scale = width / 302;
-// 	$('newsletter-captcha').css('transform', 'scale(' + scale + ')');
-// 	$('newsletter-captcha').css('-webkit-transform', 'scale(' + scale + ')');
-// 	$('newsletter-captcha').css('transform-origin', '0 0');
-// 	$('newsletter-captcha').css('-webkit-transform-origin', '0 0');
-// }
-
-// $(init);
-
-// function init() {
-//     var width = $('.newsletter-captcha').parent().width();
-// if (width < 401) {
-// 	var scale = width / 401;
-// 	$('.newsletter-captcha').css('transform', 'scale(' + scale + ')');
-// 	$('.newsletter-captcha').css('-webkit-transform', 'scale(' + scale + ')');
-// 	$('.newsletter-captcha').css('transform-origin', '0 0');
-// 	$('.newsletter-captcha').css('-webkit-transform-origin', '0 0');
-// }
-// }

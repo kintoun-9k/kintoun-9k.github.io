@@ -63,11 +63,7 @@
     <h3 class="widget-title">Newsletter</h3>
     <div class="newsletter-subtitle">Sign up for our email list</div>
     <div class="newsletter-text">Receive the latest articles via email</div>
-    <!-- Old mailchimp style form below commented out -->
-    <!--<form class="c-newsletter-form validate" action="{% if site.mailchimp %}//{{site.mailchimp}}{% else %}#{% endif %}" method="POST"
-      id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate> -->
-      <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> --> 
-      <script type="text/javascript">
+    <script type="text/javascript">
 	      var enableBtn = function() {
 		document.getElementById('mc-embedded-subscribe').disabled = false;
 	      };
@@ -110,16 +106,6 @@
         async defer>
       </script>
   </div>
-
-  {% if site.instafeed == true %}
-  <div class="widget widget-instagram">
-    <h3 class="widget-title">Instagram</h3>
-    <div class="instagram-box">
-      <ul id="instafeed" class="instagram-grid list-reset clearfix"></ul>
-      <a class="instagram-prof" href="#">&#64;UserName</a>
-    </div>
-  </div>
-  {% endif %}
 
   <div class="widget widget-tags">
     <h3 class="widget-title">Tag Cloud</h3>
