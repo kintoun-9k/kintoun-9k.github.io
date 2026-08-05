@@ -1,1 +1,14 @@
+# Build output.
+# GitHub Pages builds this site server-side from source, so a committed
+# _site/ is never served -- it is pure noise in the history.
+_site/
 .jekyll-cache/
+.sass-cache/
+
+# Local gem install path
+/vendor/
+/.bundle/
+
+# macOS AppleDouble resource forks and Finder metadata
+._*
+.DS_Store
