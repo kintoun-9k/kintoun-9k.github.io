@@ -12,3 +12,6 @@ _site/
 # macOS AppleDouble resource forks and Finder metadata
 ._*
 .DS_Store
+
+# local-only drafts, never committed
+_drafts/
