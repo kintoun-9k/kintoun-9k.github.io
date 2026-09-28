@@ -63,48 +63,22 @@
     <h3 class="widget-title">Newsletter</h3>
     <div class="newsletter-subtitle">Sign up for our email list</div>
     <div class="newsletter-text">Receive the latest articles via email</div>
-    <script type="text/javascript">
-	      var enableBtn = function() {
-		document.getElementById('mc-embedded-subscribe').disabled = false;
-	      };
-	      var disableBtn = function() {
-		document.getElementById('mc-embedded-subscribe').disabled = true;
-	      };
-	      var onloadCallback = function() {
-		// Renders the HTML element with id 'mc-embedded-subscribe' as a reCAPTCHA widget.
-		grecaptcha.render('captcha', {
-		  'sitekey' : '6LenLu0ZAAAAAIE3xvqkAOatCaDG4NaoU8owrHFx',
-		  'callback' : enableBtn,
-		  'expired-callback' : disableBtn,
-		  'theme' : 'dark'
-		});
-	      };
-      </script>
-      <form
-	      action="https://buttondown.email/api/emails/embed-subscribe/agathos"
-	      method="post"
-	      target="popupwindow"
-  	      onsubmit="window.open('https://buttondown.email/agathos', 'popupwindow')"> 
+    <form action="https://buttondown.com/api/emails/embed-subscribe/agathos" method="post" target="_blank">
       <div class="newsletter-group">
         <div class="newsletter-group-top">
           <label class="screen-reader-text" for="mce-EMAIL">Email address</label>
           <i class="email-icon ion ion-ios-mail"></i>
           <input class="newsletter-email required email" id="mce-EMAIL"
-	  type="text" name="email" placeholder="E-mail"> 
-	</div>
-	<div id="recaptcha">
-		<div class="newsletter-captcha" id="captcha"></div>
-	</div>
-        <input class="newsletter-button" id="mc-embedded-subscribe" type="submit" name="subscribe" value="Subscribe" disabled="disabled">
-        <input type="hidden" name='redirect_to' value={{"/thankyou/" | prepend : site.url}} />
-	<p>
-	  <a href="https://buttondown.email" target="_blank">Powered by Buttondown.</a>
-	</p>
+            type="email" name="email" placeholder="E-mail" required>
+        </div>
+        <input type="hidden" name="embed" value="1">
+        <input type="hidden" name="redirect_to" value="{{ "/thankyou/" | prepend: site.url }}">
+        <input class="newsletter-button" id="mc-embedded-subscribe" type="submit" name="subscribe" value="Subscribe">
+        <p>
+          <a href="https://buttondown.com" target="_blank">Powered by Buttondown.</a>
+        </p>
       </div>
-      </form>
-      <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
-        async defer>
-      </script>
+    </form>
   </div>
 
   <div class="widget widget-tags">

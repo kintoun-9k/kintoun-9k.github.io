@@ -227,9 +227,6 @@
   .newsletter-email {
     padding: 15px 15px 15px 33px;
   }
-  // .newsletter-captcha, #recaptcha::before {
-  //   content:"";
-  // }
   .newsletter-button {
     margin-top: 20px;
     font-size: 14px;
@@ -272,37 +269,12 @@
 
 // Media
 @media only screen and (min-width: 200px) {
-  .widget-newsletter{
-    .newsletter-captcha {
-      display: block;
-      transform:scale(0.85)!important; 
-      -webkit-transform:scale(0.85)!important;
-      transform-origin:0 0;
-      -webkit-transform-origin:0 0;
-      margin: 5px 0px 5px 0px;
-      text-align: center;
-      position: relative;
-      left: 3px;
-    }
-  }
   .widget {
     padding: 40px;
   }
 }
 
 @media only screen and (min-width: 825px) {
-  .widget-newsletter{
-    .newsletter-captcha {
-      display: block;
-      transform:scale(0.75)!important; 
-      -webkit-transform:scale(0.75)!important;
-      transform-origin:0 0;
-      -webkit-transform-origin:0 0;
-      position: relative;
-      left: 10px;
-      margin: 5px 0px 5px 0px;
-    }
-   }
 
    .recent-posts {
     .recent-header {
@@ -322,18 +294,6 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .widget-newsletter{
-    .newsletter-captcha {
-      display: block;
-      transform:scale(0.55)!important; 
-      -webkit-transform:scale(0.55)!important;
-      transform-origin:0 0;
-      -webkit-transform-origin:0 0;
-      position: relative;
-      left: 15px;
-      margin: 5px 0px 5px 0px;
-    }
-   }
 
    .recent-posts {
     .recent-header {
@@ -353,18 +313,6 @@
 }
 
 @media only screen and (min-width: 992px) {
-  .widget-newsletter{
-    .newsletter-captcha {
-      transform:scale(0.9)!important; 
-      -webkit-transform:scale(0.9)!important;
-      transform-origin:0 0;
-      -webkit-transform-origin:0 0;
-      position: relative;
-      margin: 5px 0px 5px 0px;
-      position: relative;
-      left: 5px;
-    }
-  }
   .recent-posts {
     flex-wrap: nowrap;
     .recent-header {
